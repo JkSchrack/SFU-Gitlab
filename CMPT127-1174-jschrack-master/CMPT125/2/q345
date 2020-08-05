@@ -1,0 +1,36 @@
+3. 	a) Post-Condition: Return i if target is found, else return -1 if not found.
+	b) Assertion: For any i, i is greather than or equal to 0 and less than n.
+	c) Initiation: i = 0.
+	   Maintenance:I is greater than or equal to 0 and less than n.
+	   Termination:If arr[i] == target return i, if target is not found return -1.
+
+4.	a) Binary Search
+	b) O(logn) for binary search for file, and O(n) for pushing everything + 1 position.
+	   O(logn) * O(n) = O(nlogn).
+	c) O(n) insertion because we are moving all elements forward one position; and O(n) for 	   removal because we are subtracting a position for all elements after.
+	   O(n) + O(n) = O(nlogn)
+	d) Bob should insertion sort because the partners do this 'rarely' therefore it is more 	   likely that there are more files correctly placed then wrongly. 
+
+	
+
+5.
+	for i = 0 to n
+		CounterArray[i] = 0
+		// so all values in CounterArray = 0
+
+
+	for i = 0 to n	
+		spot = OriginalArray[i]
+		CounterArray[spot] += 1
+		// CounterArray counts 
+
+	for i = 0 to n
+		if (CounterArray[i] > 0)
+			for (int k = 0 < CounterArray[i])
+				OriginalArray[i + k] = CounterArray[i]
+			
+
+
+	
+
+	
